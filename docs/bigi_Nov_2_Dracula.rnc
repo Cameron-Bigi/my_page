@@ -1,0 +1,13 @@
+start = root
+root = element root {para*, chapter*,  heading*}
+para = element para {text*, date, time, location, Narration, quote}
+date = element date {when}
+when = attribute when {xsd:date}
+time = element time {text*}
+location = element location {what}
+what = attribute what {text*}
+Narration = element Narration {text*}
+quote = element quote {text*}
+chapter = element chapter {text*}
+heading = element heading {text*}
+
